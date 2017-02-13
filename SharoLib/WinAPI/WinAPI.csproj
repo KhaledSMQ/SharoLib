@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19BE05EA-0185-4D3E-B99F-D844EABFE176}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinAPI</RootNamespace>
+    <AssemblyName>Sharoron.NMethod</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Const\AnimateWindowFlags.cs" />
+    <Compile Include="Const\AppBarMessage.cs" />
+    <Compile Include="Const\BitBltOp.cs" />
+    <Compile Include="Const\BitmapCompressionMode.cs" />
+    <Compile Include="Const\BlurBehindFlags.cs" />
+    <Compile Include="Const\BPPF.cs" />
+    <Compile Include="Const\BP_BUFFERFORMAT.cs" />
+    <Compile Include="Const\ClassStyles.cs" />
+    <Compile Include="Const\DTTOPSFlags.cs" />
+    <Compile Include="Const\DwmThumbnailFlags.cs" />
+    <Compile Include="Const\DWMWA.cs" />
+    <Compile Include="Const\DWM_BB.cs" />
+    <Compile Include="Const\ExitWindows.cs" />
+    <Compile Include="Const\FlashWindow.cs" />
+    <Compile Include="Const\GetWindow_Cmd.cs" />
+    <Compile Include="Const\GlobalHookType.cs" />
+    <Compile Include="Const\GWL.cs" />
+    <Compile Include="Const\KeyboardMessage.cs" />
+    <Compile Include="Const\KeyboardUpDown.cs" />
+    <Compile Include="Const\MK.cs" />
+    <Compile Include="Const\MOD.cs" />
+    <Compile Include="Const\MouseEventFlags.cs" />
+    <Compile Include="Const\PDTIMER.cs" />
+    <Compile Include="Const\PointerFlags.cs" />
+    <Compile Include="Const\PointerInputType.cs" />
+    <Compile Include="Const\PROGDLG.cs" />
+    <Compile Include="Const\RawInputType.cs" />
+    <Compile Include="Const\RawMouseButtons.cs" />
+    <Compile Include="Const\RawMouseFlags.cs" />
+    <Compile Include="Const\SC.cs" />
+    <Compile Include="Const\SWP.cs" />
+    <Compile Include="Const\TextShadowType.cs" />
+    <Compile Include="Const\TouchFeedBack.cs" />
+    <Compile Include="Const\TouchFlags.cs" />
+    <Compile Include="Const\TouchMask.cs" />
+    <Compile Include="Const\TWF.cs" />
+    <Compile Include="Const\WindowFromPointFlags.cs" />
+    <Compile Include="Data\APPBARDATA.cs" />
+    <Compile Include="Data\BITMAPFILEHEADER.cs" />
+    <Compile Include="Data\BITMAPINFO.cs" />
+    <Compile Include="Data\BITMAPINFOHEADER.cs" />
+    <Compile Include="Data\BlurBehind.cs" />
+    <Compile Include="Data\BP_PAINTPARAMS.cs" />
+    <Compile Include="Data\CWP.cs" />
+    <Compile Include="Data\DTTOPTS.cs" />
+    <Compile Include="Data\DwmSize.cs" />
+    <Compile Include="Data\DwmThumbnailProperties.cs" />
+    <Compile Include="Data\DWM_BLURBEHIND.cs" />
+    <Compile Include="Data\KEYBOARDSTATEFLAG.cs" />
+    <Compile Include="Const\LWA.cs" />
+    <Compile Include="Const\MenuFlags.cs" />
+    <Compile Include="Const\ShowState.cs" />
+    <Compile Include="Data\FLASHWINFO.cs" />
+    <Compile Include="Const\FormatFlag.cs" />
+    <Compile Include="Const\StructSize.cs" />
+    <Compile Include="Const\WindowStyles.cs" />
+    <Compile Include="Const\WindowStylesEx.cs" />
+    <Compile Include="Const\WM.cs" />
+    <Compile Include="Data\HDC.cs" />
+    <Compile Include="Data\RAWINPUT.cs" />
+    <Compile Include="Data\RawInputHid.cs" />
+    <Compile Include="Data\RAWINPUTKEYBOARD.cs" />
+    <Compile Include="Data\RAWINPUTMOUSE.cs" />
+    <Compile Include="Data\RawKeyboardFlags.cs" />
+    <Compile Include="Manager\HWND.cs" />
+    <Compile Include="Data\KEYBOARDSTATE.cs" />
+    <Compile Include="Data\MARGINS.cs" />
+    <Compile Include="Data\MONITORINFO.cs" />
+    <Compile Include="Const\MouseMessage.cs" />
+    <Compile Include="Data\MOUSESTATE.cs" />
+    <Compile Include="Data\MOUSESTATEFLAG.cs" />
+    <Compile Include="Data\POINT.cs" />
+    <Compile Include="Data\POINTERINFO.cs" />
+    <Compile Include="Data\POINTERTOUCHINFO.cs" />
+    <Compile Include="Data\RECT.cs" />
+    <Compile Include="Const\MonitorInfoFlag.cs" />
+    <Compile Include="Data\RGBQUAD.cs" />
+    <Compile Include="Data\Thumbnail.cs" />
+    <Compile Include="Data\TITLEBARINFO.cs" />
+    <Compile Include="Data\TOKEN_PRIVILEGES.cs" />
+    <Compile Include="Data\TOUCHINFO.cs" />
+    <Compile Include="Data\WHEELDATA.cs" />
+    <Compile Include="Data\WHEELDIRECTION.cs" />
+    <Compile Include="Data\WINDOWINFO.cs" />
+    <Compile Include="Data\WINDOWPLACEMENT.cs" />
+    <Compile Include="Data\WNDCLASS.cs" />
+    <Compile Include="Data\XBUTTONDATA.cs" />
+    <Compile Include="Extend\advapi32\Process.cs" />
+    <Compile Include="Extend\dwmapi\Aero.cs" />
+    <Compile Include="Extend\gdi32\Bitmap.cs" />
+    <Compile Include="Extend\gdi32\DC.cs" />
+    <Compile Include="Extend\gdi32\Object.cs" />
+    <Compile Include="Extend\kernel32\ini.cs" />
+    <Compile Include="Extend\kernel32\Process.cs" />
+    <Compile Include="Extend\kernel32\string.cs" />
+    <Compile Include="Extend\shell32\appbar.cs" />
+    <Compile Include="Extend\user32\shlwapi\IO.cs" />
+    <Compile Include="Extend\user32\Hook.cs" />
+    <Compile Include="Extend\user32\Monitor.cs" />
+    <Compile Include="Extend\kernel32\error.cs" />
+    <Compile Include="Extend\user32\DC.cs" />
+    <Compile Include="Extend\user32\Mouse.cs" />
+    <Compile Include="Extend\user32\Input.cs" />
+    <Compile Include="Extend\user32\Window.cs" />
+    <Compile Include="Extend\Delegate.cs" />
+    <Compile Include="Extend\user32\Windows.cs" />
+    <Compile Include="Extend\uxtheme\Dwm.cs" />
+    <Compile Include="Extension\_ext_color.cs" />
+    <Compile Include="Extension\_int_error.cs" />
+    <Compile Include="Interface\Win32IProgressDialog.cs" />
+    <Compile Include="Interface\Win32ProgressDialog.cs" />
+    <Compile Include="Manager\Capture.cs" />
+    <Compile Include="Manager\ClipboardManager.cs" />
+    <Compile Include="Manager\Cursor.cs" />
+    <Compile Include="Manager\GlobalHookBase.cs" />
+    <Compile Include="Manager\HotKey.cs" />
+    <Compile Include="Manager\HWNDManager.cs" />
+    <Compile Include="Manager\IniFile.cs" />
+    <Compile Include="Manager\KeyboardHook.cs" />
+    <Compile Include="Manager\Monitor.cs" />
+    <None Include="Manager\_MouseHook.cs" />
+    <Compile Include="Manager\MouseHook.cs" />
+    <Compile Include="Manager\ProgressDialog.cs" />
+    <Compile Include="Manager\Shutdown.cs" />
+    <Compile Include="Manager\SystemSupports.cs" />
+    <Compile Include="Manager\Touch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinAPIException.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
