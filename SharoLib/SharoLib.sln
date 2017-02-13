@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharoLib", "SharoLib\SharoLib.csproj", "{58F778F9-1A7B-42C0-AAE0-182FC1D5A18E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAPI", "..\..\..\..\Dropbox\Project\ライブラリ\単体\WinAPI\WinAPI.csproj", "{19BE05EA-0185-4D3E-B99F-D844EABFE176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAPI.Control", "..\..\..\..\Dropbox\Project\ライブラリ\単体\WinAPI.Control\WinAPI.Control.csproj", "{C3973ED6-DA27-4C98-B6B8-DCA7AD760716}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{58F778F9-1A7B-42C0-AAE0-182FC1D5A18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F778F9-1A7B-42C0-AAE0-182FC1D5A18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58F778F9-1A7B-42C0-AAE0-182FC1D5A18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19BE05EA-0185-4D3E-B99F-D844EABFE176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BE05EA-0185-4D3E-B99F-D844EABFE176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BE05EA-0185-4D3E-B99F-D844EABFE176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BE05EA-0185-4D3E-B99F-D844EABFE176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3973ED6-DA27-4C98-B6B8-DCA7AD760716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3973ED6-DA27-4C98-B6B8-DCA7AD760716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3973ED6-DA27-4C98-B6B8-DCA7AD760716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3973ED6-DA27-4C98-B6B8-DCA7AD760716}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
